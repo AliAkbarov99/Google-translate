@@ -1,0 +1,140 @@
+$border-color : #e0e0e0;
+$main-font : "Roboto",arial,sans-serif;
+$main-color : #1a73e8;
+
+%centerX{
+    display: flex;
+    align-items: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+.container {
+    width: 98%;
+    margin: auto;
+}
+
+
+#header {
+    background-color: #fff;
+    width: 100%;
+    border-bottom: 1px solid $border-color;
+    &::after{
+        content: "";
+        height: 160px;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -999;
+        background-color: #fafafa;
+        border-bottom: 1px solid $border-color;
+    }
+}
+
+#nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0px;
+}
+
+.nav__left {
+    display: flex;
+    align-items: center;
+}
+
+.nav__left  {
+    i{
+    font-size: 1.2rem;
+    color: #5f6368;
+    padding: 12px;
+    border-radius: 50%;
+    background-color: white;
+    text-align: center;
+    }
+}
+
+.nav__left {
+    i{
+        &:hover{
+            background-color: #e8ebf1;
+            cursor: pointer;
+        }
+    }
+}
+
+.nav__left {
+    img{
+        width: 74px;
+        height: 24px;
+        margin-left: 20px;
+    }
+}
+
+.nav__left {
+    span{
+        color: #5f6368;
+        font-size: 1.4rem;
+        font-family: $main-font;
+        margin-left: 5px;
+    }
+}
+
+
+.nav__right {
+    @extend %centerX;
+}
+
+
+.nav__right {
+    
+    i{
+        font-size: 1.2rem;
+        color: #5f6368;
+        padding: 12px;
+        border-radius: 50%;
+        background-color: white;
+        text-align: center;
+        margin-right: 15px;
+    }
+    }
+
+
+.nav__right {
+
+    i {
+        &:hover {
+            background-color: #e8ebf1;
+            cursor: pointer;
+        }
+    }
+}
+
+.nav__right {
+
+    a {
+        background-color: #6c9c3c;
+        color: white;
+        text-decoration: none;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        @extend %centerX;
+        justify-content: center;
+        font-family: $main-font;
+        border: 3px solid #fff;
+
+        &:hover{
+            border-color: $border-color;
+        }
+    }
+}
